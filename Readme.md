@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Логунов](https://up.htmlacademy.ru/adaptive/12/user/170928).
-* Наставник: `Неизвестно`.
+* Наставник: [Кекс](https://up.htmlacademy.ru/adaptive/12/user/6).
 
 ---
 
