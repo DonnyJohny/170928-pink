@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-heager">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__image" src="#">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML ACADEMY</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="promo">
+        <div class="promo__wrapper">
+          <p class="promo__text">Фотографии пользователей</p>
+        </div>
+      </section>
+      <div class="slogan">
+        <p class="slogan__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
+      <section class="photo">
+        <article class="photo__day-photo">
+          <img class="photo__picture" width="" height="" alt="Мост">
+          <div class="photo__wrapper">
+            <div class="photo__description">
+              <p class="photo__author">Анна
+                <span class="photo__time">(5 минут назад)</span>
+              </p>
+              <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="photo__likes">Нравится: 215</p>
+            </div>
+          </div>
+        </article>
+        <article class="photo__item">
+          <div class="photo__wrapper">
+            <img class="photo__picture" src="#" width="" height="" alt="Фотокамера и машина">
+            <div class="photo__description">
+              <p class="photo__author">Левон
+                <span class="photo__time">(5 часов назад)</span>
+              </p>
+              <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="photo__likes">Нравится: 356</p>
+            </div>
+          </div>
+          <div class="photo__wrapper">
+            <img class="photo__picture" src="#" width="" height="" alt="Барабанная установка">
+            <div class="photo__description">
+              <p class="photo__author">Антон
+                <span class="photo__time">(12 часов назад)</span>
+              </p>
+              <p class="photo__text">Соседи будут рады!</p>
+              <p class="photo__likes">Нравится: 666</p>
+            </div>
+          </div>
+          <div class="photo__wrapper">
+            <img class="photo__picture" src="#" width="" height="" alt="Окна в здании">
+            <div class="photo__description">
+              <p class="photo__author">Борис
+                <span class="photo__time">(20 часов назад)</span>
+              </p>
+              <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="photo__likes">Нравится: 215</p>
+            </div>
+          </div>
+          <div class="photo__wrapper">
+            <img class="photo__picture" src="#" width="" height="" alt="Бахча">
+            <div class="photo__description">
+              <p class="photo__author">Сергей
+                <span class="photo__time">(25 часов назад)</span>
+              </p>
+              <p class="photo__text">Самая кубанская в мире!</p>
+              <p class="photo__likes">Нравится: 4</p>
+            </div>
+          </div>
+          <div class="photo__wrapper">
+            <img class="photo__picture" src="#" width="" height="" alt="Ноги">
+            <div class="photo__description">
+              <p class="photo__author">Максим
+                <span class="photo__time">(40 часов назад)</span>
+              </p>
+              <p class="photo__text">Где снег-то?</p>
+              <p class="photo__likes">Нравится: 150</p>
+            </div>
+          </div>
+          <div class="photo__wrapper">
+            <img class="photo__picture" src="#" width="" height="" alt="Крыло самолёта">
+            <div class="photo__description">
+              <p class="photo__author">Надежда
+                <span class="photo__time">(45 часов назад)</span>
+              </p>
+              <p class="photo__text">Всем GM и взаимные лайки!</p>
+              <p class="photo__likes">Нравится: 2560</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div class="slogan">
+        <p class="slogan__text">Затмите их всех!</p>
+        <p class="slogan__text">Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+      <section class="upload">
+        <form  class="upload__form" name="upload-form" method="get" action="#">
+          <div lass="upload__image-wrapper">
+            <img class-"upload__image" width="" height="" alt="Много снега">
+          </div>
+          <div class="upload__wrapper-editor">
+            <div class="upload__inner-editor">
+              <div class="upload__editor">
+                <label for="pruning">Обрезка</label>
+                <input class="upload__input upload__input--pruning" type="radio" id="pruning" name="value">
+              </div>
+              <div class="upload__editor">
+                <label for="fill">Заливка</label>
+                <input class="upload__input upload__input--fill" type="radio" id="fill" name="value">
+              </div>
+              <div class="upload__editor">
+                <label for="brightness">Яркость</label>
+                <input class="upload__input upload__input--brightness" type="radio" id="brightness" name="value">
+              </div>
+              <input class="upload__scale" type="range" name="value">
+            </div>
+          </div>
+          <div class="upload__buttons">
+            <button class="upload__btn upload__btn--active" type="submit">Запостить</button>
+            <button class="upload__btn" type="reset">Отмена</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo footer-logo">
+          <img class="footer-logo__image" width="" height="" alt="">
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Мы на ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано<span>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

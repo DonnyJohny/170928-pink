@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-heager">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__image" src="#">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML ACADEMY</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="promo">
+        <div class="promo__wrapper">
+          <p class="promo__text">Конкурс на самое безбащеное путешествие с Пинк</p>
+        </div>
+      </section>
+      <div class="slogan">
+        <p class="slogan__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      </div>
+      <form class="competition" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="competition__block competition__block__user-data">
+          <label class="competition__label competition__label--reminder" for="user-surname">Фамилия:</label>
+          <input class="competition__input-text" id="user-surname" type="text" placeholder="Укажите фамилию*" name="surname" required>
+          <label class="competition__label competition__label--reminder" for="user-name">Имя:</label>
+          <input class="competition__input-text" id="user-name" type="text" placeholder="Укажите ваше имя*" name="name" required>
+          <label class="competition__label competition__label--reminder" for="user-patronymic">Отчество:</label>
+          <input class="competition__input-text" id="user-patronymic" type="text" placeholder="Ну и отчество тоже*" name="patronymic" required>
+        </div>
+        <div class="competition__block competition__block--achievements">
+          <h3 class="competition__block-title">Ваши безбашенные достижения в путешествии</h3>
+          <label class="competition__label competition__label--checkbox">
+            <input class="competiotion__checkbox" type="checkbox" name="selfie with shark">Сделал селфи с акулой
+          </label>
+          <label class="competition__label competition__label--checkbox">
+            <input class="competiotion__checkbox" type="checkbox" name="burned on beach" checked>Обгорел на пляже
+          </label>
+          <label class="competition__label competition__label--checkbox">
+            <input class="competiotion__checkbox" type="checkbox" name="Chuck Norris" checked>Видел Чака Норриса
+          </label>
+          <label class="competition__label competition__label--checkbox">
+            <input class="competiotion__checkbox" type="checkbox" name="souvenirs">Накупил сувениров
+          </label>
+          <label class="competition__label competition__label--checkbox">
+            <input class="competiotion__checkbox" type="checkbox" name="keep tower" checked>Удержал башню
+          </label>
+          <label class="competition__label competition__label--checkbox">
+            <input class="competiotion__checkbox" type="checkbox" name="destroy hotel">Разгромил отель
+          </label>
+        </div>
+        <div class="competition__block competition__block--contacts">
+          <label class="competition__contacts">Номер телефона
+            <input class="competition__input-text" type="text" placeholder="Номер, пожалуйста" name="phone">
+          </label>
+          <label class="competition__contacts">Адрес почты
+            <input class="competition__input-text" type="text" placeholder="Введите почту*" name="email">
+          </label>
+        </div>
+        <div class="competition__block competition__block-application">
+          <h3 class="competition__block-title">С каким приложением путешествовали?</h3>
+          <label class="competion__label">
+            <input class="competition__radio" type="radio" name="application" value="iOS application">Pink для iOS
+          </label>
+          <label class="competion__label">
+            <input class="competition__radio" type="radio" name="application" value="Android application">Pink на Android
+          </label>
+          <label class="competion__label">
+            <input class="competition__radio" type="radio" name="application" value="Win application">Windows Phone
+          </label>
+        </div>
+        <div class="competition__block competition__block--textarea">
+          <h3 class="competition__block-titile">Опишите свои емоции</h3>
+          <textarea class="competition__textarea" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="textarea"></textarea>
+        </div>
+        <button class="competition__btn" type="submit">Отправить форму</button>
+        <p class="competition__addition">* - обязательные поля</p>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo footer-logo">
+          <img class="footer-logo__image" width="" height="" alt="">
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Мы на ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано<span>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
