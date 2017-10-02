@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header class="page-heager">
@@ -30,13 +32,13 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="promo">
-        <div class="promo__wrapper">
+      <section class="promo promo">
+        <div class="promo__wrapper promo__wrapper">
           <p class="promo__text">Конкурс на самое безбащеное путешествие с Пинк</p>
         </div>
       </section>
       <div class="slogan">
-        <p class="slogan__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="slogan__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </div>
       <form class="competition" action="https://echo.htmlacademy.ru/" method="post">
         <div class="competition__block competition__block__user-data">
@@ -50,41 +52,39 @@
         <div class="competition__block competition__block--achievements">
           <h3 class="competition__block-title">Ваши безбашенные достижения в путешествии</h3>
           <label class="competition__label competition__label--checkbox">
-            <input class="competiotion__checkbox" type="checkbox" name="selfie with shark">Сделал селфи с акулой
+            <input class="competition__checkbox" type="checkbox" name="selfie with shark">Сделал селфи с акулой
           </label>
           <label class="competition__label competition__label--checkbox">
-            <input class="competiotion__checkbox" type="checkbox" name="burned on beach" checked>Обгорел на пляже
+            <input class="competition__checkbox" type="checkbox" name="burned on beach" checked>Обгорел на пляже
           </label>
           <label class="competition__label competition__label--checkbox">
-            <input class="competiotion__checkbox" type="checkbox" name="Chuck Norris" checked>Видел Чака Норриса
+            <input class="competition__checkbox" type="checkbox" name="Chuck Norris" checked>Видел Чака Норриса
           </label>
           <label class="competition__label competition__label--checkbox">
-            <input class="competiotion__checkbox" type="checkbox" name="souvenirs">Накупил сувениров
+            <input class="competition__checkbox" type="checkbox" name="souvenirs">Накупил сувениров
           </label>
           <label class="competition__label competition__label--checkbox">
-            <input class="competiotion__checkbox" type="checkbox" name="keep tower" checked>Удержал башню
+            <input class="competition__checkbox" type="checkbox" name="keep tower" checked>Удержал башню
           </label>
           <label class="competition__label competition__label--checkbox">
-            <input class="competiotion__checkbox" type="checkbox" name="destroy hotel">Разгромил отель
+            <input class="competition__checkbox" type="checkbox" name="destroy hotel">Разгромил отель
           </label>
         </div>
         <div class="competition__block competition__block--contacts">
-          <label class="competition__contacts">Номер телефона
-            <input class="competition__input-text" type="text" placeholder="Номер, пожалуйста" name="phone">
-          </label>
-          <label class="competition__contacts">Адрес почты
-            <input class="competition__input-text" type="text" placeholder="Введите почту*" name="email">
-          </label>
+          <label class="competition__contacts" for="phone">Номер телефона</label>
+          <input class="competition__input-text" id="phone" type="text" placeholder="Номер, пожалуйста" name="phone">
+          <label class="competition__contacts" for="address">Адрес почты</label>
+          <input class="competition__input-text" id="address" type="text" placeholder="Введите почту*" name="email">
         </div>
-        <div class="competition__block competition__block-application">
+        <div class="competition__block competition__block--application">
           <h3 class="competition__block-title">С каким приложением путешествовали?</h3>
-          <label class="competion__label">
+          <label class="competition__label competition__label--radio">
             <input class="competition__radio" type="radio" name="application" value="iOS application">Pink для iOS
           </label>
-          <label class="competion__label">
+          <label class="competition__label competition__label--radio">
             <input class="competition__radio" type="radio" name="application" value="Android application">Pink на Android
           </label>
-          <label class="competion__label">
+          <label class="competition__label competition__label--radio">
             <input class="competition__radio" type="radio" name="application" value="Win application">Windows Phone
           </label>
         </div>
@@ -99,7 +99,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo footer-logo">
-          <img class="footer-logo__image" width="" height="" alt="">
+          <img class="footer-logo__image" src="../img/logo-pink-blue-mobile.svg" width="150" height="40" alt="">
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -120,5 +120,7 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+    </div>
   </body>
 </html>
