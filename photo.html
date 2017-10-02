@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header class="page-heager">
@@ -30,7 +32,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="promo">
+      <section class="promo promo--photo">
         <div class="promo__wrapper">
           <p class="promo__text">Фотографии пользователей</p>
         </div>
@@ -39,8 +41,9 @@
         <p class="slogan__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
       <section class="photo">
+        <h3 class="visually-hidden">Фотогаллерея</h3>
         <article class="photo__day-photo">
-          <img class="photo__picture" width="" height="" alt="Мост">
+          <img class="photo__panorama" src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="Мост">
           <div class="photo__wrapper">
             <div class="photo__description">
               <p class="photo__author">Анна
@@ -53,7 +56,7 @@
         </article>
         <article class="photo__item">
           <div class="photo__wrapper">
-            <img class="photo__picture" src="#" width="" height="" alt="Фотокамера и машина">
+            <img class="photo__picture" src="../img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотокамера и машина">
             <div class="photo__description">
               <p class="photo__author">Левон
                 <span class="photo__time">(5 часов назад)</span>
@@ -63,7 +66,7 @@
             </div>
           </div>
           <div class="photo__wrapper">
-            <img class="photo__picture" src="#" width="" height="" alt="Барабанная установка">
+            <img class="photo__picture" src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка">
             <div class="photo__description">
               <p class="photo__author">Антон
                 <span class="photo__time">(12 часов назад)</span>
@@ -73,7 +76,7 @@
             </div>
           </div>
           <div class="photo__wrapper">
-            <img class="photo__picture" src="#" width="" height="" alt="Окна в здании">
+            <img class="photo__picture" src="../img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окна в здании">
             <div class="photo__description">
               <p class="photo__author">Борис
                 <span class="photo__time">(20 часов назад)</span>
@@ -83,7 +86,7 @@
             </div>
           </div>
           <div class="photo__wrapper">
-            <img class="photo__picture" src="#" width="" height="" alt="Бахча">
+            <img class="photo__picture" src="../img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Бахча">
             <div class="photo__description">
               <p class="photo__author">Сергей
                 <span class="photo__time">(25 часов назад)</span>
@@ -93,7 +96,7 @@
             </div>
           </div>
           <div class="photo__wrapper">
-            <img class="photo__picture" src="#" width="" height="" alt="Ноги">
+            <img class="photo__picture" src="../img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Ноги">
             <div class="photo__description">
               <p class="photo__author">Максим
                 <span class="photo__time">(40 часов назад)</span>
@@ -103,7 +106,7 @@
             </div>
           </div>
           <div class="photo__wrapper">
-            <img class="photo__picture" src="#" width="" height="" alt="Крыло самолёта">
+            <img class="photo__picture" src="../img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолёта">
             <div class="photo__description">
               <p class="photo__author">Надежда
                 <span class="photo__time">(45 часов назад)</span>
@@ -115,28 +118,24 @@
         </article>
       </section>
       <div class="slogan">
-        <p class="slogan__text">Затмите их всех!</p>
-        <p class="slogan__text">Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="slogan__text">Затмите их всех!<br/> Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <section class="upload">
         <form  class="upload__form" name="upload-form" method="get" action="#">
           <div lass="upload__image-wrapper">
-            <img class-"upload__image" width="" height="" alt="Много снега">
+            <img class="upload__image" src="../img/photo-road-mobile@1x.jpg" width="280" height="375" alt="Много снега">
           </div>
           <div class="upload__wrapper-editor">
             <div class="upload__inner-editor">
-              <div class="upload__editor">
-                <label for="pruning">Обрезка</label>
-                <input class="upload__input upload__input--pruning" type="radio" id="pruning" name="value">
-              </div>
-              <div class="upload__editor">
-                <label for="fill">Заливка</label>
-                <input class="upload__input upload__input--fill" type="radio" id="fill" name="value">
-              </div>
-              <div class="upload__editor">
-                <label for="brightness">Яркость</label>
-                <input class="upload__input upload__input--brightness" type="radio" id="brightness" name="value">
-              </div>
+              <label class="upload__label upload__label--pruning">Обрезка
+                <input class="upload__input" type="radio" name="value">
+              </label>
+              <label class="upload__label upload__label--fill">Заливка
+                <input class="upload__input" type="radio" name="value">
+              </label>
+              <label class="upload__label upload__label--contrast">Контраст
+                <input class="upload__input" type="radio" name="value">
+              </label>
               <input class="upload__scale" type="range" name="value">
             </div>
           </div>

@@ -1,0 +1,70 @@
+.competition__block {
+  padding-left: 20px;
+  padding-right: 20px;
+  &--achievements {
+    background-color: #f2f2f2;
+  }
+
+  &--application {
+    background-color: #f2f2f2;
+  }
+}
+
+.competition__input-text {
+  padding: 18px 20px;
+  width: 240px;
+
+  font-size: $font-size-large;
+}
+
+.competition__label {
+  position: relative;
+
+  display: block;
+
+  &--checkbox {
+    margin-bottom: 43px;
+    padding-left: 70px;
+
+    font-size: $font-size-large;
+  }
+
+  &--reminder {
+    padding-left: 22px;
+  }
+
+  &--radio {
+    padding-left: 70px;
+    font-size: $font-size-large;
+  }
+}
+
+.competition__checkbox {
+  display: none;
+}
+
+.competition__radio {
+  display: none;
+}
+
+.competition__textarea {
+  width: 238px;
+  height: 155px;
+  resize: none;
+  padding: 20px;
+}
+.competition__contacts {
+  display: block;
+  padding-left: 22px;
+}
+.competition__btn {
+  margin-left: 20px;
+  width: 280px;
+  height: 63px;
+  font-size: $font-size-large;
+
+  background-color: #2aab6d;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
