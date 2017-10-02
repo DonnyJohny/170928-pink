@@ -1,21 +1,26 @@
 .contacts {
   text-align: center;
 }
+
 .contacts__intro {
   font-size: $font-size-biggest;
 }
+
 .contacts__list {
   margin: 0;
   padding: 0;
 }
+
 .contacts__item {
   list-style: none;
   padding: 0 20px;
 }
+
 .contacts__to-do {
   font-size: $font-size-large;
   font-weight: $font-weight-bold;
 }
+
 .contacts__info {
   font-size: $font-size-biggest;
   text-decoration: none;

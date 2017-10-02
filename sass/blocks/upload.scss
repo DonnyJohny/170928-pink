@@ -2,15 +2,18 @@
   padding: 20px;
   background-color: #f2f2f2;
 }
+
 .upload__image {
   width: 280px;
   height: 375px;
 }
+
 .upload__inner-editor {
   padding-top: 35px;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .upload__label {
   position: relative;
 
@@ -64,12 +67,15 @@
     background-repeat: no-repeat;
   }
 }
+
 .upload__input {
   display: none;
 }
+
 .upload__scale {
   width: 240px;
 }
+
 .upload__btn {
   width: 274px;
   height: 49px;

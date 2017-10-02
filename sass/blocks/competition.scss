@@ -1,6 +1,7 @@
 .competition__block {
   padding-left: 20px;
   padding-right: 20px;
+
   &--achievements {
     background-color: #f2f2f2;
   }
@@ -53,10 +54,12 @@
   resize: none;
   padding: 20px;
 }
+
 .competition__contacts {
   display: block;
   padding-left: 22px;
 }
+
 .competition__btn {
   margin-left: 20px;
   width: 280px;
