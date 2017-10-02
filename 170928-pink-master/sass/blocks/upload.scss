@@ -1,0 +1,87 @@
+.upload {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+.upload__image {
+  width: 280px;
+  height: 375px;
+}
+.upload__inner-editor {
+  padding-top: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.upload__label {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: top;
+
+  width: 80px;
+  height: 65px;
+
+  font-size: 0;
+
+  &--pruning::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 45px;
+    height: 45px;
+
+    background-image: url("../img/icon-editor-crop.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--fill::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 50px;
+    height: 45px;
+
+    background-image: url("../img/icon-editor-fill.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--contrast::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 33px;
+    height: 33px;
+
+    background-image: url("../img/icon-editor-contrast.svg");
+    background-repeat: no-repeat;
+  }
+}
+.upload__input {
+  display: none;
+}
+.upload__scale {
+  width: 240px;
+}
+.upload__btn {
+  width: 274px;
+  height: 49px;
+  margin-bottom: 10px;
+
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 3px solid #dddfe0;
+  border-radius: 45px;
+
+  &--active {
+    border-color: #d22856;
+    color: #d22856;
+  }
+}
